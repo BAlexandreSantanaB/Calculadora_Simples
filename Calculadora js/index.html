@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="bg">
+
+    <div id="container">
+        
+        <h2>Calculadora</h2>
+        <input type="text" placeholder="0" id="display" 
+        disabled="disabled">
+
+        <table>
+            <tr>
+                <td colspan="2">
+                    <button type="button" onclick="calcular('acao', 'ce')" style="width:  106px;">Ce</button>
+                </td>
+                <td>
+                    <button type="button" onclick="calcular('acao', '*')">*</button>
+                </td>
+                <td>
+                    <button type="button" onclick="calcular('acao', '/')">/</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" onclick="calcular('valor', 7)">7</button>
+                </td>
+                <td>
+                    <button type="button" onclick="calcular('valor', 8)">8</button>
+                </td>
+                <td>
+                    <button type="button" onclick="calcular('valor', 9)">9</button>
+                </td>
+                <td>
+                    <button type="button" onclick="calcular('acao', '-')">-</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" onclick="calcular('valor', 4)">4</button>
+                </td>
+                <td>
+                    <button type="button" onclick="calcular('valor', 5)">5</button>
+                </td>
+                <td>
+                    <button type="button" onclick="calcular('valor', 6)">6</button>
+                </td>
+                <td>
+                    <button type="button" onclick="calcular('acao', '+')">+</button>
+                </td>
+                <tr>
+                    <td>
+                        <button type="button" onclick="calcular('valor', 1)">1</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="calcular('valor', 2)">2</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="calcular('valor', 3)">3</button>
+                    </td>
+                    <td rowspan="2">
+                        <button type="button" onclick="calcular('acao', '=')" style="height:  106px;">=</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="button" onclick="calcular('valor', 0)" style="width: 106px">0</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="calcular('acao', '.')">.</button>
+                    </td>
+                </tr>
+            </tr>
+        </table>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
